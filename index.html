@@ -4,37 +4,73 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Digital Transformation Training — Software Colony</title>
-  <meta name="description" content="Demystify data analysis with hands-on training in Microsoft Excel, SQL, and Power BI. Turn raw data into decisions that move organisations forward." />
-  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
-  
+  <!-- ── Google Analytics / Global site tag (gtag.js) ── -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3DJPCSVZ4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-R3DJPCSVZ4');
+  </script>
+
+  <!-- ── Microsoft Clarity ── -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xddyhp98jd");
+</script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    
+  </style>
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
+  <!-- ── COUNTDOWN BAR ── -->
+  <div class="countdown-bar">
+    <span>Training starts in</span>
+    <div class="countdown-units">
+      <div class="countdown-unit"><span class="countdown-num" id="cd-days">--</span><div class="countdown-label">Days</div></div>
+      <div class="countdown-unit"><span class="countdown-num" id="cd-hours">--</span><div class="countdown-label">Hours</div></div>
+      <div class="countdown-unit"><span class="countdown-num" id="cd-mins">--</span><div class="countdown-label">Mins</div></div>
+      <div class="countdown-unit"><span class="countdown-num" id="cd-secs">--</span><div class="countdown-label">Secs</div></div>
+    </div>
+    <span>· Fri 24th July 2026</span>
+  </div>
+
+  <!-- ── NAV ── -->
+  <nav id="main-nav">
     <div class="nav-logo">Software <span>Colony</span></div>
-    <a href="https://forms.office.com/r/axuXFxLnm5" target="_blank" class="nav-cta">Register Now</a>
+    <ul class="nav-links">
+      <li><a href="#about" data-section="about">About</a></li>
+      <li><a href="#courses" data-section="courses">Courses</a></li>
+      <li><a href="#faq" data-section="faq">FAQ</a></li>
+      <li><a href="#register" data-section="register">Register</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://forms.office.com/r/axuXFxLnm5" target="_blank" class="nav-cta" onclick="trackEvent('nav_register_click')">Register Now</a>
+    </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
     <div class="hero-text">
       <div class="hero-eyebrow">8-Weekend Programme · Starts 24th July 2026</div>
       <h1>Digital <em>Transformation</em> Through Data</h1>
-      <p class="hero-sub">
-        Demystify data analysis with hands-on training in Microsoft Excel, SQL, and Power BI.
-        Turn raw data into decisions that move organisations forward.
-      </p>
+      <p class="hero-sub">Demystify data analysis with hands-on training in Microsoft Excel, SQL, and Power BI. Turn raw data into decisions that move organisations forward.</p>
       <div class="hero-actions">
-        <a href="https://forms.office.com/r/axuXFxLnm5" target="_blank" class="btn-primary">Register Now →</a>
+        <a href="https://forms.office.com/r/axuXFxLnm5" target="_blank" class="btn-primary" onclick="trackEvent('hero_register_click')">Register Now →</a>
         <a href="#courses" class="btn-outline">See Courses</a>
       </div>
     </div>
-
     <div class="hero-card">
       <div class="price-block">
         <div class="price-label">Training Fee (Discounted)</div>
@@ -44,109 +80,76 @@
       </div>
       <div class="meta-row">
         <div class="meta-icon">📅</div>
-        <div>
-          <div class="meta-label">Start Date</div>
-          <div class="meta-value">Friday, 24th July 2026</div>
-        </div>
+        <div><div class="meta-label">Start Date</div><div class="meta-value">Friday, 24th July 2026</div></div>
       </div>
       <div class="meta-row">
         <div class="meta-icon">🗓️</div>
-        <div>
-          <div class="meta-label">Duration</div>
-          <div class="meta-value">8 Weekends</div>
-        </div>
+        <div><div class="meta-label">Duration</div><div class="meta-value">8 Weekends</div></div>
       </div>
       <div class="meta-row">
         <div class="meta-icon">🏅</div>
-        <div>
-          <div class="meta-label">Certification</div>
-          <div class="meta-value">Certificate upon completion</div>
-        </div>
+        <div><div class="meta-label">Certification</div><div class="meta-value">Certificate upon completion</div></div>
       </div>
       <div class="meta-row">
         <div class="meta-icon">📞</div>
-        <div>
-          <div class="meta-label">WhatsApp / Call</div>
-          <div class="meta-value">+234 803 854 2817</div>
-        </div>
+        <div><div class="meta-label">WhatsApp / Call</div><div class="meta-value">+234 803 854 2817</div></div>
       </div>
     </div>
   </section>
 
-  <!-- STATS STRIP -->
+  <!-- ── STATS STRIP ── -->
   <div class="stats-strip">
-    <div class="stat-item">
-      <div class="stat-number">8</div>
-      <div class="stat-text">Weekends</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">3</div>
-      <div class="stat-text">Core Courses</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">75K</div>
-      <div class="stat-text">Special Rate (₦)</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">100%</div>
-      <div class="stat-text">Hands-on</div>
-    </div>
+    <div class="stat-item"><div class="stat-number">8</div><div class="stat-text">Weekends</div></div>
+    <div class="stat-item"><div class="stat-number">3</div><div class="stat-text">Core Courses</div></div>
+    <div class="stat-item"><div class="stat-number">75K</div><div class="stat-text">Special Rate (₦)</div></div>
+    <div class="stat-item"><div class="stat-number">100%</div><div class="stat-text">Hands-on</div></div>
   </div>
 
-  <!-- ABOUT -->
-  <section class="about">
+  <!-- ── ABOUT ── -->
+  <section class="about" id="about">
     <div class="about-grid">
-      <div class="about-text">
+      <div class="about-text reveal">
         <div class="section-eyebrow">About the Programme</div>
         <h2 class="section-title">What is a Data Analyst?</h2>
         <p>A data analyst collects, processes, and interprets data to help organisations make informed decisions. They use tools like Excel, SQL, and visualisation software to uncover patterns and trends — turning raw data into actionable insights.</p>
         <p>This programme is designed to take you from zero to confident in 8 weekends, with live instruction, real projects, and industry-standard tools.</p>
       </div>
       <div class="about-pillars">
-        <div class="pillar">
+        <div class="pillar reveal reveal-delay-1">
           <div class="pillar-icon">📊</div>
-          <div>
-            <div class="pillar-title">Practical, Not Theoretical</div>
-            <div class="pillar-desc">Every session uses real datasets and business scenarios, not textbook examples.</div>
-          </div>
+          <div><div class="pillar-title">Practical, Not Theoretical</div><div class="pillar-desc">Every session uses real datasets and business scenarios, not textbook examples.</div></div>
         </div>
-        <div class="pillar">
+        <div class="pillar reveal reveal-delay-2">
           <div class="pillar-icon">🤝</div>
-          <div>
-            <div class="pillar-title">Mentorship Included</div>
-            <div class="pillar-desc">Direct access to your instructors for guidance beyond the classroom.</div>
-          </div>
+          <div><div class="pillar-title">Mentorship Included</div><div class="pillar-desc">Direct access to your instructors for guidance beyond the classroom.</div></div>
         </div>
-        <div class="pillar">
+        <div class="pillar reveal reveal-delay-3">
           <div class="pillar-icon">🏆</div>
-          <div>
-            <div class="pillar-title">Certification Exam</div>
-            <div class="pillar-desc">Sit a certification exam at the end and walk away with recognised credentials.</div>
-          </div>
+          <div><div class="pillar-title">Certification Exam</div><div class="pillar-desc">Sit a certification exam at the end and walk away with recognised credentials.</div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- COURSES -->
+  <!-- ── COURSES ── -->
   <section id="courses">
-    <div class="section-eyebrow">What You'll Learn</div>
-    <h2 class="section-title">Three Courses, One Programme</h2>
-    <p class="section-sub">Master the three most in-demand tools in data analysis, delivered in a structured, progressive curriculum.</p>
+    <div class="section-eyebrow reveal">What You'll Learn</div>
+    <h2 class="section-title reveal">Three Courses, One Programme</h2>
+    <p class="section-sub reveal">Master the three most in-demand tools in data analysis, delivered in a structured, progressive curriculum.</p>
     <div class="courses-grid">
-      <div class="course-card">
+      <div class="course-card reveal reveal-delay-1">
         <span class="course-icon">📗</span>
         <div class="course-number">01</div>
         <div class="course-title">Microsoft Excel</div>
         <p class="course-desc">Build a rock-solid foundation in data organisation, formulas, pivot tables, and dashboards — the world's most widely used analysis tool.</p>
       </div>
-      <div class="course-card">
+      <div class="course-card reveal reveal-delay-2">
         <span class="course-icon">🗄️</span>
         <div class="course-number">02</div>
         <div class="course-title">Microsoft SQL (MSQL)</div>
         <p class="course-desc">Query, filter, and join databases with confidence. Learn how to extract exactly the data you need from any database system.</p>
       </div>
-      <div class="course-card">
+      <div class="course-card reveal reveal-delay-3">
         <span class="course-icon">📊</span>
         <div class="course-number">03</div>
         <div class="course-title">Microsoft Power BI</div>
@@ -155,23 +158,23 @@
     </div>
   </section>
 
-  <!-- INCENTIVES -->
+  <!-- ── INCENTIVES ── -->
   <section class="incentives">
     <div class="section-eyebrow">Why Join</div>
     <h2 class="section-title">What You Walk Away With</h2>
     <p class="section-sub">Beyond the technical skills, every participant receives structured support to land their first data role.</p>
     <div class="incentives-grid">
-      <div class="incentive-card">
+      <div class="incentive-card reveal reveal-delay-1">
         <span class="incentive-icon">🎓</span>
         <div class="incentive-title">Certification Exam</div>
         <p class="incentive-desc">Sit an industry-recognised certification exam included in your programme fee. A credential that opens doors.</p>
       </div>
-      <div class="incentive-card">
+      <div class="incentive-card reveal reveal-delay-2">
         <span class="incentive-icon">🧭</span>
         <div class="incentive-title">1-on-1 Mentorship</div>
         <p class="incentive-desc">Get personal guidance from experienced data professionals throughout your training and beyond.</p>
       </div>
-      <div class="incentive-card">
+      <div class="incentive-card reveal reveal-delay-3">
         <span class="incentive-icon">💼</span>
         <div class="incentive-title">Peer Projects</div>
         <p class="incentive-desc">Collaborate with fellow participants on real-world projects — building your portfolio and professional network simultaneously.</p>
@@ -179,32 +182,60 @@
     </div>
   </section>
 
-  <!-- HOW TO REGISTER -->
+  <!-- ── FAQ ── -->
+  <section class="faq" id="faq">
+    <div class="section-eyebrow reveal">Got Questions?</div>
+    <h2 class="section-title reveal">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="toggleFaq(this)">Is this training online or physical? <span class="faq-chevron">▾</span></button>
+        <div class="faq-answer">The training is conducted physically over 8 weekends. You'll be in a hands-on classroom environment with your instructor and fellow participants, which makes learning faster and more practical.</div>
+      </div>
+      <div class="faq-item reveal reveal-delay-1">
+        <button class="faq-question" onclick="toggleFaq(this)">Do I need any prior experience? <span class="faq-chevron">▾</span></button>
+        <div class="faq-answer">No experience is required. The programme is designed to take you from absolute beginner to confident data analyst. A basic ability to use a computer and internet is all you need to start.</div>
+      </div>
+      <div class="faq-item reveal reveal-delay-2">
+        <button class="faq-question" onclick="toggleFaq(this)">What if I miss a weekend? <span class="faq-chevron">▾</span></button>
+        <div class="faq-answer">We understand life happens. Please contact us via WhatsApp as early as possible if you'll miss a session. Our team will advise on catch-up options. Regular attendance is strongly recommended for the best outcome.</div>
+      </div>
+      <div class="faq-item reveal reveal-delay-3">
+        <button class="faq-question" onclick="toggleFaq(this)">Will I get a certificate? <span class="faq-chevron">▾</span></button>
+        <div class="faq-answer">Yes! Every participant sits a certification exam included in the programme fee. Upon passing, you receive a recognised certificate that you can add to your CV and LinkedIn profile.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="toggleFaq(this)">Is the ₦75,000 fee the final price? <span class="faq-chevron">▾</span></button>
+        <div class="faq-answer">The ₦75,000 is a special discounted rate available for registrations before the start date of 24th July 2026. The fee is all-inclusive — no hidden charges. Pay once, get everything.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW TO REGISTER ── -->
   <section class="register" id="register">
     <div style="text-align:center">
-      <div class="section-eyebrow">How to Join</div>
-      <h2 class="section-title">Register in 3 Simple Steps</h2>
-      <p class="section-sub" style="margin:0 auto;">Getting started takes less than 10 minutes. Secure your spot before the discount closes.</p>
+      <div class="section-eyebrow reveal">How to Join</div>
+      <h2 class="section-title reveal">Register in 3 Simple Steps</h2>
+      <p class="section-sub reveal" style="margin:0 auto;">Getting started takes less than 10 minutes. Secure your spot before the discount closes.</p>
     </div>
     <div class="steps">
-      <div class="step">
+      <div class="step reveal reveal-delay-1">
         <div class="step-number">1</div>
         <div class="step-title">Pay the Training Fee</div>
         <p class="step-desc">Transfer ₦75,000 to the Access Bank account below. This confirms your interest and reserves your seat.</p>
       </div>
-      <div class="step">
+      <div class="step reveal reveal-delay-2">
         <div class="step-number">2</div>
         <div class="step-title">Fill the Registration Form</div>
         <p class="step-desc">Complete the online form with your details and upload your payment receipt as proof of payment.</p>
       </div>
-      <div class="step">
+      <div class="step reveal reveal-delay-3">
         <div class="step-number">3</div>
         <div class="step-title">Receive Confirmation</div>
         <p class="step-desc">Our team will confirm your registration via WhatsApp within 24 hours with your onboarding details.</p>
       </div>
     </div>
 
-    <div class="payment-box">
+    <div class="payment-box reveal">
       <h3>Payment Details</h3>
       <div class="payment-row">
         <span class="payment-key">Bank</span>
@@ -212,7 +243,10 @@
       </div>
       <div class="payment-row">
         <span class="payment-key">Account Number</span>
-        <span class="payment-val">0064177282</span>
+        <span class="payment-val">
+          0064177282
+          <button class="copy-btn" onclick="copyText('0064177282', this)">Copy</button>
+        </span>
       </div>
       <div class="payment-row">
         <span class="payment-key">Account Name</span>
@@ -222,26 +256,38 @@
         <span class="payment-key">Amount</span>
         <span class="payment-val" style="color:var(--green)">₦75,000</span>
       </div>
+      <div style="margin-top:20px; text-align:center;">
+        <a href="https://forms.office.com/r/axuXFxLnm5" target="_blank" class="btn-primary" style="width:100%;display:block;" onclick="trackEvent('payment_register_click')">Complete Registration Form →</a>
+      </div>
     </div>
   </section>
 
-  <!-- CTA BAND -->
+  <!-- ── CTA BAND ── -->
   <div class="cta-band">
     <h2>Seats are Limited — Register Before 24th July</h2>
     <p>Don't miss this discounted rate. Secure your place in the next cohort today.</p>
-    <a href="https://forms.office.com/r/axuXFxLnm5" target="_blank" class="btn-primary">Register Now →</a>
+    <a href="https://forms.office.com/r/axuXFxLnm5" target="_blank" class="btn-primary" onclick="trackEvent('cta_band_click')">Register Now →</a>
   </div>
 
-  <!-- FOOTER -->
+  <!-- ── FOOTER ── -->
   <footer>
     <div class="footer-logo">Software <span>Colony</span></div>
     <div class="footer-contact">
       <a href="tel:+2348038542817">📞 +234 803 854 2817</a>
-      <a href="https://wa.me/2348038542817" target="_blank">💬 WhatsApp Us</a>
+      <a href="https://wa.me/2348038542817" target="_blank" onclick="trackEvent('footer_whatsapp_click')">💬 WhatsApp Us</a>
       <a href="https://forms.office.com/r/axuXFxLnm5" target="_blank">📝 Registration Form</a>
     </div>
     <div class="footer-copy">© 2026 Software Colony · Digital Transformation Training Programme</div>
   </footer>
+
+  <!-- ── WHATSAPP FLOAT BUTTON ── -->
+  <a href="https://wa.me/2348038542817" target="_blank" class="wa-float" onclick="trackEvent('floating_whatsapp_click')" aria-label="Chat on WhatsApp">
+    <span class="wa-tooltip">Chat with us</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+  <script src="script.js"></script>
 
 </body>
 </html>
